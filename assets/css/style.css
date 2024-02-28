@@ -532,6 +532,42 @@ section {
 /*--------------------------------------------------------------
 # Portfolio
 --------------------------------------------------------------*/
+.work-content {
+  padding: 2rem 3% 1rem 4%;
+}
+
+.work-content .w-more {
+  color: #4e4e4e;
+  font-size: 0.8rem;
+}
+
+.work-content .w-more .w-ctegory {
+  color: #0078ff;
+}
+
+.work-content .w-like {
+  font-size: 2.5rem;
+  color: #0078ff;
+  float: right;
+}
+
+.work-content .w-like a {
+  color: #0078ff;
+}
+
+.work-content .w-like .num-like {
+  font-size: 0.7rem;
+}
+
+.w-title {
+  font-size: 1.2rem;
+}
+
+
+.portfolio .row{
+  justify-content: center;
+}
+
 .portfolio .portfolio-item {
   margin-bottom: 30px;
 }
@@ -577,6 +613,7 @@ section {
 
 .portfolio .portfolio-wrap img{
   min-height: 300px;
+  max-width: 800px;
 }
 .portfolio .portfolio-wrap::before {
   content: "";
@@ -589,10 +626,13 @@ section {
   transition: all ease-in-out 0.3s;
   z-index: 2;
   opacity: 0;
+  width: 70%;
+  
 }
 
 .portfolio .portfolio-wrap .portfolio-links {
   opacity: 1;
+  max-width: 800px;
   left: 0;
   right: 0;
   bottom: -60px;
