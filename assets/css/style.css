@@ -468,6 +468,18 @@ section {
   background-color: #149ddd;
 }
 
+.skills .skills-content{
+  display: flex;
+  padding: 5%;
+
+}
+
+.skills .skills-content img{
+  max-height: 300px;
+  width: 20%;
+  padding: 2%;
+}
+
 /*--------------------------------------------------------------
 # Resume
 --------------------------------------------------------------*/
