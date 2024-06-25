@@ -3,14 +3,14 @@
 
 <head>
   <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-Q6NLDZL1XL"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q6NLDZL1XL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
 
-  gtag('config', 'G-Q6NLDZL1XL');
-</script>
+    gtag('config', 'G-Q6NLDZL1XL');
+  </script>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <meta name="google-site-verification" content="nzemqiuPgp9f708sVzB4XazQIdxJ828g765hA76JNig" />
@@ -22,10 +22,13 @@
   <link href="assets/img/favicon.png" rel="icon">
   <link href="assets/img/icon.png" rel="apple-touch-icon">
 
-  <!-- Google Fonts -->
-  <link
-    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
-    rel="stylesheet">
+  <!-- Preload Google Fonts -->
+  <link rel="preload" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"></noscript>
+
+  <!-- Preload Critical CSS -->
+  <link rel="preload" href="assets/css/style.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="assets/css/style.css"></noscript>
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
@@ -157,22 +160,34 @@
         </div>
 
         <div class="row skills-content">
-          <img alt="html" style="max-height: 300px;" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original-wordmark.svg" />
-          <img alt="css" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original-wordmark.svg" />
-          <img alt="javascript" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" />
-          <img alt="react" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original-wordmark.svg" />
-          <img alt="redis" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/redis/redis-plain-wordmark.svg" />
-          <img alt="nodejs" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original-wordmark.svg" />
-          <img alt="expressjs" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original-wordmark.svg" />
-          <img alt="python" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original-wordmark.svg" />
-          <img alt="django" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/django/django-plain-wordmark.svg" />
-          <img alt="postgresql" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original-wordmark.svg" />
+          <img alt="html" style="max-height: 300px;"
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original-wordmark.svg" />
+          <img alt="css"
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original-wordmark.svg" />
+          <img alt="javascript"
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" />
+          <img alt="react"
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original-wordmark.svg" />
+          <img alt="redis"
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/redis/redis-plain-wordmark.svg" />
+          <img alt="nodejs"
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original-wordmark.svg" />
+          <img alt="expressjs"
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original-wordmark.svg" />
+          <img alt="python"
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original-wordmark.svg" />
+          <img alt="django"
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/django/django-plain-wordmark.svg" />
+          <img alt="postgresql"
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original-wordmark.svg" />
 
-            <div style="text-align: center;">
-              <img alt="bootstrap" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original-wordmark.svg" />
-  
-              <img alt="github" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original-wordmark.svg" />
-            </div>
+          <div style="text-align: center;">
+            <img alt="bootstrap"
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original-wordmark.svg" />
+
+            <img alt="github"
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original-wordmark.svg" />
+          </div>
         </div>
 
     </section><!-- End Skills Section -->
@@ -189,7 +204,9 @@
           <div class="col-md-5">
             <div class="work-box">
               <a aria-label="compliance perception" href="https://www.complianceperception.ca">
-                <div style= "background:#F3F3F3; text-align: center; min-height: 200px; display: flex; justify-content: center; align-items: center;" class="work-img">
+                <div
+                  style="background:#F3F3F3; text-align: center; min-height: 200px; display: flex; justify-content: center; align-items: center;"
+                  class="work-img">
                   <img src="assets/img/portfolio/cp-logo.png" alt="matteo giliotti" class="img-fluid">
                 </div>
               </a>
@@ -206,7 +223,8 @@
                   </div>
                   <div class="col-sm-2">
                     <div class="w-like">
-                      <a aria-label="compliance perception" href="https://www.complianceperception.ca"> <span class="bi bi-plus-circle"></span></a>
+                      <a aria-label="compliance perception" href="https://www.complianceperception.ca"> <span
+                          class="bi bi-plus-circle"></span></a>
                     </div>
                   </div>
                 </div>
@@ -216,7 +234,9 @@
           <div class="col-md-5">
             <div class="work-box">
               <a aria-label="E-commerce" href="https://e-commerce-1-nxh1.onrender.com/">
-                <div style="background-color: black; text-align: center; min-height: 200px; display: flex; justify-content: center; align-items: center;" class="work-img">
+                <div
+                  style="background-color: black; text-align: center; min-height: 200px; display: flex; justify-content: center; align-items: center;"
+                  class="work-img">
                   <img src="assets/img/portfolio/white-logo.png" alt="matteo giliotti" class="img-fluid">
                 </div>
               </a>
@@ -234,7 +254,8 @@
                   </div>
                   <div class="col-sm-2">
                     <div class="w-like">
-                      <a aria-label="E-commerce" href="https://e-commerce-1-nxh1.onrender.com/"> <span class="bi bi-plus-circle"></span></a>
+                      <a aria-label="E-commerce" href="https://e-commerce-1-nxh1.onrender.com/"> <span
+                          class="bi bi-plus-circle"></span></a>
                     </div>
                   </div>
                 </div>
@@ -244,7 +265,9 @@
           <div class="col-md-5">
             <div class="work-box">
               <a aria-label="real-estate" href="https://lundydundy.github.io/realestatewebsite/">
-                <div style="background-color: #FFFFFF; text-align: center; min-height: 200px; display: flex; justify-content: center; align-items: center;" class="work-img">
+                <div
+                  style="background-color: #FFFFFF; text-align: center; min-height: 200px; display: flex; justify-content: center; align-items: center;"
+                  class="work-img">
                   <img src="assets/img/portfolio/re-logo.png" alt="matteo giliotti" class="img-fluid">
                 </div>
               </a>
@@ -260,7 +283,8 @@
                   </div>
                   <div class="col-sm-2">
                     <div class="w-like">
-                      <a aria-label="real-estate" href="https://lundydundy.github.io/realestatewebsite/"> <span class="bi bi-plus-circle"></span></a>
+                      <a aria-label="real-estate" href="https://lundydundy.github.io/realestatewebsite/"> <span
+                          class="bi bi-plus-circle"></span></a>
                     </div>
                   </div>
                 </div>
@@ -271,7 +295,9 @@
           <div class="col-md-5">
             <div class="work-box">
               <a aria-label="face recognition" href="https://facebrainrecognition-lundy.onrender.com/">
-                <div style="background-color: #FFFFFF; text-align: center; min-height: 200px; display: flex; justify-content: center; align-items: center;" class="work-img">
+                <div
+                  style="background-color: #FFFFFF; text-align: center; min-height: 200px; display: flex; justify-content: center; align-items: center;"
+                  class="work-img">
                   <img src="assets/img/portfolio/fr-logo.png" alt="matteo giliotti" class="img-fluid">
                 </div>
               </a>
@@ -431,8 +457,7 @@
                 <h4>Call:</h4>
                 <p>(416) 997 2433</p>
               </div>
-              <iframe
-                title="google maps"
+              <iframe title="google maps"
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d184551.9097724681!2d-79.54286612814491!3d43.71837095813001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d4cb90d7c63ba5%3A0x323555502ab4c477!2sToronto%2C%20ON!5e0!3m2!1sen!2sca!4v1707155260539!5m2!1sen!2sca"
                 frameborder="0" style="border:0; width: 100%; height: 290px;" allowfullscreen></iframe>
             </div>
