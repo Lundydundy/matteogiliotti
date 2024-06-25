@@ -4,7 +4,7 @@
 <head>
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q6NLDZL1XL"></script>
-  <script>
+  <script async>
     window.dataLayer = window.dataLayer || [];
     function gtag() { dataLayer.push(arguments); }
     gtag('js', new Date());
@@ -31,13 +31,35 @@
   <noscript><link rel="stylesheet" href="assets/css/style.css"></noscript>
 
   <!-- Vendor CSS Files -->
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+
+  <script async>
+    function loadStylesheet(url) {
+      const link = document.createElement('link');
+      link.rel = 'stylesheet';
+      link.href = url;
+      document.head.appendChild(link);
+    }
+
+    document.addEventListener("DOMContentLoaded", function() {
+      loadStylesheet("assets/vendor/aos/aos.css");
+      loadStylesheet("assets/vendor/bootstrap/css/bootstrap.min.css");
+      loadStylesheet("assets/vendor/bootstrap-icons/bootstrap-icons.css");
+      loadStylesheet("assets/vendor/boxicons/css/boxicons.min.css");
+      loadStylesheet("assets/vendor/glightbox/css/glightbox.min.css");
+      loadStylesheet("assets/vendor/swiper/swiper-bundle.min.css");
+      loadStylesheet("https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css");
+    });
+
+  </script>
+  
+  
+  <!-- <link href="assets/vendor/aos/aos.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
   <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-  <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+  <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" /> -->
 
 
   <!-- Template Main CSS File -->
